@@ -1,0 +1,16 @@
+.card {
+    background-color: rgb(103, 129, 150);
+    box-shadow: -6px 6px black;
+    /*height: 300px;*/
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.title {
+    height: 30px;
+    color:white;
+    opacity: .8;
+}

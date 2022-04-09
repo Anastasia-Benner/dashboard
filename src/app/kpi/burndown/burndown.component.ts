@@ -15,8 +15,8 @@ export interface burndownData {
 export class BurndownComponent implements OnInit, AfterViewInit {
 
   margin = {top: 10, right: 30, bottom: 30, left: 60}
-  width = 460 - this.margin.left - this.margin.right;
-  height = 400 - this.margin.top - this.margin.bottom;
+  width = 440 - this.margin.left - this.margin.right;
+  height = 280 - this.margin.top - this.margin.bottom;
 
   
   @ViewChild("burndown") figureContainer: ElementRef<HTMLElement>;

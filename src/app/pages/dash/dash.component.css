@@ -1,0 +1,9 @@
+.linecharts, .piecharts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.barcharts {
+    display: flex;
+    justify-content: center;
+}

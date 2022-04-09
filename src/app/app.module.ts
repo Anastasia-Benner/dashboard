@@ -7,6 +7,8 @@ import { BurndownComponent } from './kpi/burndown/burndown.component';
 import { DashComponent } from './pages/dash/dash.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { PiechartComponent } from './kpi/piechart/piechart.component';
+import { BarchartComponent } from './kpi/barchart/barchart.component';
+import { PiechartcardComponent } from './chartcontainers/piechartcard/piechartcard.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PiechartComponent } from './kpi/piechart/piechart.component';
     BurndownComponent,
     DashComponent,
     NotfoundComponent,
-    PiechartComponent
+    PiechartComponent,
+    BarchartComponent,
+    PiechartcardComponent
   ],
   imports: [
     BrowserModule,

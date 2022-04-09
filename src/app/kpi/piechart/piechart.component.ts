@@ -18,15 +18,19 @@ export class PiechartComponent implements OnInit, AfterViewInit {
   @ViewChild('piechart') figureContainer: ElementRef<HTMLElement>;
 
   data: chartSlice[] = [
-    {x:"test",y:5, percent:.5, color: 'red'},
-    {x:'test2', y:5, color: 'blue'}
+    {x:"test1",y:2},
+    {x:'test2', y:3},
+    {x:"test3",y:4},
+    {x:'test4', y:5},
+    {x:"tes5",y:5},
+    {x:'test6', y:8}
   ];
   //@Input() data: chartSlice[];
 
   @Input() label: string = "chart label";
   @Input() margin = 28;
-  @Input() width = 400;
-  @Input() height = 300;
+  @Input() width = 200;
+  @Input() height = 200;
 
   private radius;
   private textRadius:number  = 5;
@@ -37,7 +41,7 @@ export class PiechartComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.radius = (Math.min(this.width, this.height) / 4) - this.margin;
+    this.radius = (Math.min(this.width, this.height) / 2) - this.margin;
   }
 
   ngAfterViewInit(): void {
@@ -59,7 +63,7 @@ export class PiechartComponent implements OnInit, AfterViewInit {
       .append('g')
       .attr(
         "transform",
-        "translate("+this.width/4+","+this.height/6+")"
+        "translate("+this.width/2+","+this.height/2+")"
       );
   }
 
